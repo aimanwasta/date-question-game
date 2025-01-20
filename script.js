@@ -1,5 +1,6 @@
 const noBtn = document.getElementById("no-btn");
 const yesBtn = document.getElementById("yes-btn");
+const yesMessage = document.getElementById("yes-message");
 
 // When hovering over the "No" button
 noBtn.addEventListener("mouseenter", () => {
@@ -11,5 +12,6 @@ noBtn.addEventListener("mouseenter", () => {
 
 // When clicking "Yes"
 yesBtn.addEventListener("click", () => {
-  alert("Yay! 🥳 Let’s plan our date!");
+  yesMessage.style.display = "block"; // Show the message
+  yesMessage.innerHTML = "Yay! 🥳 You said YES! Let’s plan our date soon!";
 });
